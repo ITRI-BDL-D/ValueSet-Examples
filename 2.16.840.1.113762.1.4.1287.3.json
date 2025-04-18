@@ -1,0 +1,223 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.3",
+    "meta": {
+        "versionId": "11",
+        "lastUpdated": "2025-02-19T03:48:08.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-11-15"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.3",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.3"
+        }
+    ],
+    "version": "20241115",
+    "name": "MagneticStimulationLowerExtremity",
+    "title": "Magnetic Stimulation (lower extremity)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "20036B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to magnetic stimulation of the lower extremity. It encompasses various modalities and parameters of non-invasive magnetic stimulation used in the treatment of neuromuscular disorders, pain management, and rehabilitation of lower limb function.),(Data Element Scope: This value set is designed to standardize the terminology for documenting these procedures and to support clinical decision-making, research, and quality improvement initiatives.),(Inclusion Criteria: Multiple sclerosis, motor neurone disease, spinal cord injury or lesions, peripheral neuropathy, function of the corticospinal pathway during surgery, hemiplegia due to stroke.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "G35"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "G12.2"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "S14"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "S24"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "S34"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "G95.1"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "G95.19"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "G99.2"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "M43.3"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "M47.1"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "M50.0"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "M51.0"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "I69.33"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "I69.34"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "is-a",
+                        "value": "I69.35"
+                    }
+                ]
+            }
+        ]
+    }
+}

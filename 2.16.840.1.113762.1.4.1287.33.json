@@ -1,0 +1,124 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.33",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T02:06:20.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-18"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.33",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.33"
+        }
+    ],
+    "version": "20241218",
+    "name": "Acid_FastBacteriaCultureLimitedToUsingBothSolidCultureMediumAndLiquidCultureSystemWithAutomaticDetectionFunction",
+    "title": "Acid_Fast Bacteria Culture (Limited to Using Both Solid Culture Medium and Liquid Culture System with Automatic Detection Function)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "13026C",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to Acid-Fast Bacteria Culture.),(Data Element Scope: This value set encompasses laboratory procedures and diagnostic techniques aimed at identifying acid-fast bacteria, including pathogens such as Mycobacterium tuberculosis.),(Inclusion Criteria: Indications:\n(1) Mycobacterial infection is suspected.\n(2) Mycobacterial treatment monitoring),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "A15"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "A17"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "A18"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "A19"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "A31"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "J65,P37.0"
+                    }
+                ]
+            }
+        ]
+    }
+}

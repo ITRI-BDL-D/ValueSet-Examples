@@ -1,0 +1,124 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.21",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2025-02-19T00:54:55.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-12"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.21",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.21"
+        }
+    ],
+    "version": "20241212",
+    "name": "CombinedTransabdominalAndTransvaginalPelvicFloorReconstructionIncludingHysterectomyColposuspensionAnteriorAndPosteriorVaginalWallRepairButExcludingUrinaryIncontinenceSurgery",
+    "title": "Combined Transabdominal and Transvaginal Pelvic Floor Reconstruction (including hysterectomy, colposuspension, anterior and posterior vaginal wall repair but excluding urinary incontinence surgery)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "80026B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to restore pelvic floor support by performing a combined abdominal and vaginal pelvic floor reconstruction.),(Data Element Scope: This value set is a method that represents a combined abdominal and vaginal pelvic floor reconstruction procedure, which includes a hysterectomy, vaginal suspension, and anterior and posterior vaginal wall repair, while excluding urinary incontinence surgery.),(Inclusion Criteria: 1. Indications: Patients with uterine/vaginal prolapse who require a hysterectomy due to uterine pathology and concurrently present with anterior vaginal wall (bladder) prolapse, posterior vaginal wall (rectum) prolapse, or enterocele.\n2. Surgery: A one-stage procedure that involves an abdominal total hysterectomy and pelvic floor reconstruction—namely, anterior and posterior vaginal wall repair—with or without concomitant vault suspension.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "D25"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "D26"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "D39.0"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "N80"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "N81.1"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "N81.6,N81.5,N81.2,N81.3,N81.4"
+                    }
+                ]
+            }
+        ]
+    }
+}

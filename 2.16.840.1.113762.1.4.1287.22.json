@@ -1,0 +1,83 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.22",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T04:15:20.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-12"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.22",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.22"
+        }
+    ],
+    "version": "20241212",
+    "name": "CombinedAbdominalAndVaginalPelvicFloorReconstrctionAbdominalHysterectomySacrocolpopexyColporrhaphyCombinedAnteriorPosterior",
+    "title": "Combined Abdominal and Vaginal Pelvic Floor Reconstrction (Abdominal Hysterectomy, Sacrocolpopexy, Colporrhaphy Combined Anterior Posterior)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "80026B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to combined abdominal and vaginal pelvic floor reconstruction, which includes abdominal hysterectomy, sacrocolpopexy, and combined anterior-posterior colporrhaphy.),(Data Element Scope: This value set captures the procedural and surgical aspects used to manage pelvic organ prolapse and related pelvic floor disorders, incorporating standardized terminology for the various components of the surgery and their clinical indications.),(Inclusion Criteria: Indications: Patients who need hysterectomy due to uterine disease and (also have anterior vaginal wall (cystocele) or posterior vaginal wall (rectocele) or enterocele, etc. or uterine vaginal prolapse).),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                "concept": [
+                    {
+                        "code": "0JQC0ZZ",
+                        "display": "Repair Pelvic Region Subcutaneous Tissue and Fascia, Open Approach"
+                    },
+                    {
+                        "code": "0JUC0JZ",
+                        "display": "Supplement of Pelvic Region Subcutaneous Tissue and Fascia with Synthetic Substitute, Open Approach"
+                    },
+                    {
+                        "code": "0USG0ZZ",
+                        "display": "Reposition Vagina, Open Approach"
+                    },
+                    {
+                        "code": "0UT90ZZ",
+                        "display": "Resection of Uterus, Open Approach"
+                    },
+                    {
+                        "code": "0UTC0ZZ",
+                        "display": "Resection of Cervix, Open Approach"
+                    }
+                ]
+            }
+        ]
+    }
+}

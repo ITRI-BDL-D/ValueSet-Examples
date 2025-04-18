@@ -1,0 +1,168 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.26",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T01:56:15.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-12"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.26",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.26"
+        }
+    ],
+    "version": "20241212",
+    "name": "CryotherapyComplex",
+    "title": "Cryotherapy Complex",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "51022C",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts for cryotherapy procedures that are either complicated or involve the use of CO2 freezing and liquid nitrogen.),(Data Element Scope: This value set encompasses codes and descriptors that detail the specific techniques, clinical indications, and procedural nuances associated with these advanced cryotherapy methods.),(Inclusion Criteria: (1) Vascular lesions: pyogenic granuloma, pseudopyogenic granuloma, Kaposi's sarcoma, hemangioma, lymphangioma.\n(2) Keratosis and precancerous lesions: viral warts, solar keratosis, cutaneous horn, Bowen's disease, keratoacanthoma, and molluscum contagiosum.\n(3) Cancer: basal cell carcinoma, squamous cell carcinoma, and malignant melanoma.\n(4) Cyst: mucinous cyst.\n(5) Scars or keloids.\n(6) Warts on the tip of the nose (rosacea).\n(7) Prurigo nodularis.\n(8) Porokeratosis.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "L91.0,B08.1,C46.0,D18.1,L94.0,A63.0,D18.01,A18.4,L98.0,L85.8,L73.0,L74.8,L71.1,Q82.8,L57.0,L90.5"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "B07"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "C43"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "C44"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "D04"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "D03"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "L28"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "L72"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "L82"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "L92"
+                    }
+                ]
+            }
+        ]
+    }
+}

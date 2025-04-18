@@ -1,0 +1,146 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.5",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T03:21:49.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-11-22"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.5",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.5"
+        }
+    ],
+    "version": "20241122",
+    "name": "Enterovirus71IgMAntibody",
+    "title": "Enterovirus 71 IgM Antibody",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "14056B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to Enterovirus 71 IgM Antibody testing.),(Data Element Scope: This value set includes standardized codes and descriptors that capture the detection of IgM antibodies against Enterovirus 71, which is critical for diagnosing infections such as hand, foot, and mouth disease and associated neurological complications.),(Inclusion Criteria: Indications:\n(1) Patients with clinical symptoms of hand, foot and mouth disease or herpetic pharyngitis.\n(2) Patients with clinical symptoms such as viral meningitis, myocarditis, acute cardiopulmonary failure, etc. suspected of enterovirus infection.),(Exclusion Criteria: None)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "B08.4"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "B08.5"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "A87.0"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "B33.22"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "B34.1"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "=",
+                        "value": "B97.1"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "I50"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "J96.0"
+                    }
+                ]
+            }
+        ]
+    }
+}

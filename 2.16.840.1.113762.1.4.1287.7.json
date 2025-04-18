@@ -1,0 +1,71 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.7",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T03:17:25.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-11-27"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.7"
+        }
+    ],
+    "version": "20241127",
+    "name": "Iodine131CancerFollowUpExaminationWithThyrogenInjection",
+    "title": "Iodine 131 Cancer Follow Up Examination with Thyrogen Injection",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "26074C",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to Iodine 131 Cancer Follow Up Examination with Thyrogen Injection.),(Data Element Scope: The value set includes codes and descriptors that capture the procedural techniques, therapeutic agents, and clinical indications for monitoring cancer recurrence or residual disease.),(Inclusion Criteria: Patients with recurrent or metastatic thyroid cancer),(Exclusion Criteria: Preparation for examination or treatment of thyroid cancer patients who are not suitable for stopping T4)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "concept": [
+                    {
+                        "code": "C73",
+                        "display": "Malignant neoplasm of thyroid gland"
+                    },
+                    {
+                        "code": "C79.89",
+                        "display": "Secondary malignant neoplasm of other specified sites"
+                    }
+                ]
+            }
+        ]
+    }
+}

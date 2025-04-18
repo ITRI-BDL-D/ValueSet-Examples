@@ -1,0 +1,93 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.43",
+    "meta": {
+        "versionId": "7",
+        "lastUpdated": "2025-02-19T02:48:41.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-25"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-25"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.43",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.43"
+        }
+    ],
+    "version": "20241225",
+    "name": "HLA_ABCMultipleAntigenICD10CM",
+    "title": "HLA_ABC multiple antigen (ICD10CM)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "12087B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to HLA_ABC multiple antigen testing. This includes standardized codes and descriptors for the identification and characterization of multiple HLA class I antigens (HLA-A, HLA-B, and HLA-C). These concepts are critical for immunogenetics, donor-recipient matching in transplantation, and various disease association studies.),(Data Element Scope: This value set is designed to capture standardized data elements for documenting HLA_ABC multiple antigen testing.),(Inclusion Criteria: Receiving an organ transplant),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "Z94.4,Z94.2,Z94.83,Z94.82,Z94.3,Z94.9,Z94.1,Z94.5,Z94.7,Z94.0,Z94.6"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "T86"
+                    }
+                ]
+            }
+        ],
+        "exclude": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "T86.0"
+                    }
+                ]
+            }
+        ]
+    }
+}

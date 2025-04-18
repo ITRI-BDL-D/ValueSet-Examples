@@ -1,0 +1,247 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.17",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2025-02-19T02:31:16.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-06"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.17",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.17"
+        }
+    ],
+    "version": "20241206",
+    "name": "HydrosurgeryDebridementICD10PCS",
+    "title": "Hydrosurgery Debridement (ICD10PCS)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "62072B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to hydrosurgery debridement, a surgical technique that uses a high-pressure water jet to precisely remove necrotic or devitalized tissue from wounds.),(Data Element Scope: This value set encompasses the procedural methodology, clinical indications, and expected outcomes associated with hydrosurgery debridement, supporting its role in effective wound management and enhanced healing.),(Inclusion Criteria: Water jet debridement is required for burns of second degree or above and burns of more than 20% of the total burn area or autologous skin transplantation surgery.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                "concept": [
+                    {
+                        "code": "0HR0X73",
+                        "display": "Replacement of Scalp Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR0X74",
+                        "display": "Replacement of Scalp Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR1X73",
+                        "display": "Replacement of Face Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR1X74",
+                        "display": "Replacement of Face Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR2X73",
+                        "display": "Replacement of Right Ear Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR2X74",
+                        "display": "Replacement of Right Ear Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR3X73",
+                        "display": "Replacement of Left Ear Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR3X74",
+                        "display": "Replacement of Left Ear Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR4X73",
+                        "display": "Replacement of Neck Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR4X74",
+                        "display": "Replacement of Neck Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR5X73",
+                        "display": "Replacement of Chest Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR5X74",
+                        "display": "Replacement of Chest Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR6X73",
+                        "display": "Replacement of Back Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR6X74",
+                        "display": "Replacement of Back Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR7X73",
+                        "display": "Replacement of Abdomen Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR7X74",
+                        "display": "Replacement of Abdomen Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR8X73",
+                        "display": "Replacement of Buttock Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR8X74",
+                        "display": "Replacement of Buttock Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR9X73",
+                        "display": "Replacement of Perineum Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HR9X74",
+                        "display": "Replacement of Perineum Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRAX73",
+                        "display": "Replacement of Inguinal Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRAX74",
+                        "display": "Replacement of Inguinal Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRBX73",
+                        "display": "Replacement of Right Upper Arm Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRBX74",
+                        "display": "Replacement of Right Upper Arm Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRCX73",
+                        "display": "Replacement of Left Upper Arm Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRCX74",
+                        "display": "Replacement of Left Upper Arm Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRDX73",
+                        "display": "Replacement of Right Lower Arm Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRDX74",
+                        "display": "Replacement of Right Lower Arm Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HREX73",
+                        "display": "Replacement of Left Lower Arm Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HREX74",
+                        "display": "Replacement of Left Lower Arm Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRFX73",
+                        "display": "Replacement of Right Hand Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRFX74",
+                        "display": "Replacement of Right Hand Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRGX73",
+                        "display": "Replacement of Left Hand Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRGX74",
+                        "display": "Replacement of Left Hand Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRHX73",
+                        "display": "Replacement of Right Upper Leg Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRHX74",
+                        "display": "Replacement of Right Upper Leg Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRJX73",
+                        "display": "Replacement of Left Upper Leg Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRJX74",
+                        "display": "Replacement of Left Upper Leg Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRKX73",
+                        "display": "Replacement of Right Lower Leg Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRKX74",
+                        "display": "Replacement of Right Lower Leg Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRLX73",
+                        "display": "Replacement of Left Lower Leg Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRLX74",
+                        "display": "Replacement of Left Lower Leg Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRMX73",
+                        "display": "Replacement of Right Foot Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRMX74",
+                        "display": "Replacement of Right Foot Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRNX73",
+                        "display": "Replacement of Left Foot Skin with Autologous Tissue Substitute, Full Thickness, External Approach"
+                    },
+                    {
+                        "code": "0HRNX74",
+                        "display": "Replacement of Left Foot Skin with Autologous Tissue Substitute, Partial Thickness, External Approach"
+                    }
+                ]
+            }
+        ]
+    }
+}

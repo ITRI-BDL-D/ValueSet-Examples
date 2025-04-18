@@ -1,0 +1,69 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.32",
+    "meta": {
+        "versionId": "12",
+        "lastUpdated": "2025-02-19T00:28:58.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2025-02-19"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-26"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.32",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.32"
+        }
+    ],
+    "version": "20241226",
+    "name": "GlycatedAlbuminGARetired",
+    "title": "Glycated albumin (GA) (retired)",
+    "status": "retired",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "09139C",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to express the application of glycated albumin (GA) in diabetes.),(Data Element Scope: This value set may use a model element that is commonly used to evaluate glycemic control in diabetic patients.),(Inclusion Criteria: 1. Indications: (1) Diabetes with chronic kidney disease. (2) Patients in whom HbA1c does not accurately reflect glycemic control due to hematologic disorders. (3) Pregnant diabetic patients and those with gestational diabetes. (4) Patients whose blood glucose levels indicate poor control despite HbA1c values remaining within the acceptable range.\n2. Contraindication:\nSerum albumin concentration < 3 g/dL.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "E10.22,E13.22,E08.22,E09.22,E11.22"
+                    }
+                ]
+            }
+        ]
+    }
+}

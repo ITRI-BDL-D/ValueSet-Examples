@@ -1,0 +1,87 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.37",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T01:59:54.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-23"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-18"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.37",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.37"
+        }
+    ],
+    "version": "20241218",
+    "name": "TransabdominalPelvicFloorReconstructionICD10PCS",
+    "title": "Transabdominal pelvic floor reconstruction (ICD10PCS)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "80033B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to transabdominal pelvic floor reconstruction. This procedure involves surgical repair of the pelvic floor through an abdominal approach, targeting conditions such as pelvic organ prolapse and other related defects.),(Data Element Scope: The value set includes concepts that capture various aspects of the surgical technique, clinical indications, and outcomes associated with this intervention.),(Inclusion Criteria: Uterine prolapse (up to Grade II) or vaginal prolapse after hysterectomy and combined paravaginal defect leading to cystocele and enterocele.),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                "concept": [
+                    {
+                        "code": "0UQF0ZZ",
+                        "display": "Repair Cul-de-sac, Open Approach"
+                    },
+                    {
+                        "code": "0UQF7ZZ",
+                        "display": "Repair Cul-de-sac, Via Natural or Artificial Opening"
+                    },
+                    {
+                        "code": "0UQG0ZZ",
+                        "display": "Repair Vagina, Open Approach"
+                    },
+                    {
+                        "code": "0UQG7ZZ",
+                        "display": "Repair Vagina, Via Natural or Artificial Opening"
+                    },
+                    {
+                        "code": "0US90ZZ",
+                        "display": "Reposition Uterus, Open Approach"
+                    },
+                    {
+                        "code": "0USG0ZZ",
+                        "display": "Reposition Vagina, Open Approach"
+                    }
+                ]
+            }
+        ]
+    }
+}

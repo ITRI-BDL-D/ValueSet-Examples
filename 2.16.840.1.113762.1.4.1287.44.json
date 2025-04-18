@@ -1,0 +1,239 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.44",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T02:50:12.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-25"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-25"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.44",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.44"
+        }
+    ],
+    "version": "20241225",
+    "name": "HLA_ABCMultipleAntigenICD10PCS",
+    "title": "HLA_ABC multiple antigen (ICD10PCS)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "12087B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to HLA_ABC multiple antigen testing. This includes standardized codes and descriptors for the identification and characterization of multiple HLA class I antigens (HLA-A, HLA-B, and HLA-C). These concepts are critical for immunogenetics, donor-recipient matching in transplantation, and various disease association studies.),(Data Element Scope: This value set is designed to capture standardized data elements for documenting HLA_ABC multiple antigen testing.),(Inclusion Criteria: Receiving an organ transplant),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                "concept": [
+                    {
+                        "code": "02YA0Z0",
+                        "display": "Transplantation of Heart, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "02YA0Z2",
+                        "display": "Transplantation of Heart, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "07YM0Z0",
+                        "display": "Transplantation of Thymus, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "07YM0Z2",
+                        "display": "Transplantation of Thymus, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "07YP0Z0",
+                        "display": "Transplantation of Spleen, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "07YP0Z2",
+                        "display": "Transplantation of Spleen, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYC0Z0",
+                        "display": "Transplantation of Right Upper Lung Lobe, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYC0Z2",
+                        "display": "Transplantation of Right Upper Lung Lobe, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYD0Z0",
+                        "display": "Transplantation of Right Middle Lung Lobe, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYD0Z2",
+                        "display": "Transplantation of Right Middle Lung Lobe, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYF0Z0",
+                        "display": "Transplantation of Right Lower Lung Lobe, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYF0Z2",
+                        "display": "Transplantation of Right Lower Lung Lobe, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYG0Z0",
+                        "display": "Transplantation of Left Upper Lung Lobe, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYG0Z2",
+                        "display": "Transplantation of Left Upper Lung Lobe, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYH0Z0",
+                        "display": "Transplantation of Lung Lingula, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYH0Z2",
+                        "display": "Transplantation of Lung Lingula, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYJ0Z0",
+                        "display": "Transplantation of Left Lower Lung Lobe, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYJ0Z2",
+                        "display": "Transplantation of Left Lower Lung Lobe, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYK0Z0",
+                        "display": "Transplantation of Right Lung, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYK0Z2",
+                        "display": "Transplantation of Right Lung, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYL0Z0",
+                        "display": "Transplantation of Left Lung, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYL0Z2",
+                        "display": "Transplantation of Left Lung, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0BYM0Z0",
+                        "display": "Transplantation of Bilateral Lungs, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0BYM0Z2",
+                        "display": "Transplantation of Bilateral Lungs, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0DY50Z0",
+                        "display": "Transplantation of Esophagus, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0DY50Z2",
+                        "display": "Transplantation of Esophagus, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0DY60Z0",
+                        "display": "Transplantation of Stomach, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0DY60Z2",
+                        "display": "Transplantation of Stomach, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0DY80Z0",
+                        "display": "Transplantation of Small Intestine, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0DY80Z2",
+                        "display": "Transplantation of Small Intestine, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0DYE0Z0",
+                        "display": "Transplantation of Large Intestine, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0DYE0Z2",
+                        "display": "Transplantation of Large Intestine, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0FY00Z0",
+                        "display": "Transplantation of Liver, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0FY00Z2",
+                        "display": "Transplantation of Liver, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0FYG0Z0",
+                        "display": "Transplantation of Pancreas, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0FYG0Z2",
+                        "display": "Transplantation of Pancreas, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0TY00Z0",
+                        "display": "Transplantation of Right Kidney, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0TY00Z2",
+                        "display": "Transplantation of Right Kidney, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0TY10Z0",
+                        "display": "Transplantation of Left Kidney, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0TY10Z2",
+                        "display": "Transplantation of Left Kidney, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0UY00Z0",
+                        "display": "Transplantation of Right Ovary, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0UY00Z2",
+                        "display": "Transplantation of Right Ovary, Zooplastic, Open Approach"
+                    },
+                    {
+                        "code": "0UY10Z0",
+                        "display": "Transplantation of Left Ovary, Allogeneic, Open Approach"
+                    },
+                    {
+                        "code": "0UY10Z2",
+                        "display": "Transplantation of Left Ovary, Zooplastic, Open Approach"
+                    }
+                ]
+            }
+        ]
+    }
+}

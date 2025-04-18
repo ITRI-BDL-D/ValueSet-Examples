@@ -1,0 +1,127 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.42",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-02-19T01:52:58.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-25"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-25"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.42",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.42"
+        }
+    ],
+    "version": "20241225",
+    "name": "TotalBodyIrradiationICD10PCS",
+    "title": "Total Body Irradiation (ICD10PCS)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "36014B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent concepts for total body irradiation, a radiotherapy procedure used primarily as part of conditioning regimens before hematopoietic stem cell transplantation and in the treatment of certain malignancies.),(Data Element Scope: This value set includes clinical concepts related to the procedure details, dosage parameters, and relevant clinical indications.),(Inclusion Criteria: Bone marrow transplant patients only),(Exclusion Criteria: No)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+                "concept": [
+                    {
+                        "code": "30230G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Peripheral Vein, Open Approach"
+                    },
+                    {
+                        "code": "30230G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Peripheral Vein, Open Approach"
+                    },
+                    {
+                        "code": "30233G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Peripheral Vein, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30233G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Peripheral Vein, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30240G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Central Vein, Open Approach"
+                    },
+                    {
+                        "code": "30240G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Central Vein, Open Approach"
+                    },
+                    {
+                        "code": "30243G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Central Vein, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30243G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Central Vein, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30250G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Peripheral Artery, Open Approach"
+                    },
+                    {
+                        "code": "30250G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Peripheral Artery, Open Approach"
+                    },
+                    {
+                        "code": "30253G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Peripheral Artery, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30253G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Peripheral Artery, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30260G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Central Artery, Open Approach"
+                    },
+                    {
+                        "code": "30260G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Central Artery, Open Approach"
+                    },
+                    {
+                        "code": "30263G0",
+                        "display": "Transfusion of Autologous Bone Marrow into Central Artery, Percutaneous Approach"
+                    },
+                    {
+                        "code": "30263G1",
+                        "display": "Transfusion of Nonautologous Bone Marrow into Central Artery, Percutaneous Approach"
+                    }
+                ]
+            }
+        ]
+    }
+}

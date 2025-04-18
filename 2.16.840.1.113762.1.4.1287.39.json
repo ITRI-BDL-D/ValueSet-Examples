@@ -1,0 +1,148 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.39",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2025-02-19T04:22:52.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+                "name": "Industrial Technology Research Institute Author"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+            "valueDate": "2024-12-25"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-25"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.39",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.39"
+        }
+    ],
+    "version": "20241225",
+    "name": "FeeForNeurovascularMechanicalEndovascularThrombectomyInAcuteIschemicICD10CM",
+    "title": "Fee for Neurovascular Mechanical Endovascular Thrombectomy in Acute Ischemic (ICD10CM)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "description": "33143B",
+    "jurisdiction": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "purpose": "(Clinical Focus: The purpose of this value set is to represent clinical concepts related to the fee for neurovascular mechanical endovascular thrombectomy in acute ischemic stroke.),(Data Element Scope: This value set captures standardized terminology for documenting the financial aspects associated with this critical procedure, ensuring accurate reimbursement and billing practices while supporting cost analysis and quality measurement in stroke management.),(Inclusion Criteria: Patients with acute cerebrovascular ischemic stroke who meet the conditions for the use of intracranial vascular stent retriever and use the device for mechanical intravascular thrombectomy and who also meet the following conditions:\n(1) Within 24 hours after the onset of the disease.\nor (2) Imaging diagnosis of occlusion of the major intracranial arteries, including the internal carotid artery, the first and second segments of the middle cerebral artery, the anterior cerebral artery, the basilar artery, and the vertebral artery.\nor (3) NIH Stroke Scale score ≥6 and ≤30.),(Exclusion Criteria: (1) Subarachnoid hemorrhage\nor (2) intracerebral hemorrhage\nor (3) subdural hemorrhage/intracranial hemorrhage)",
+    "compose": {
+        "include": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "I63"
+                    }
+                ]
+            }
+        ],
+        "exclude": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "I60"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "S06.6"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "S06.3"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "in",
+                        "value": "P10.1,P52.4"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "I61"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "S06.5"
+                    }
+                ]
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "I62.0"
+                    }
+                ]
+            }
+        ]
+    }
+}
